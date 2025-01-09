@@ -3,6 +3,56 @@ import { FaLinkedin } from "react-icons/fa";
 
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import About from "./About";
+
+
+const Navbar = () => {
+    return (
+        <div className="flex justify-center">
+        <nav className="mb-4 lg:mb-16 flex lg:items-right justify-between w-full lg:w-5/6 border-b border-purple-300">
+            <div className="flex flex-shrink-0 items-center">
+                {/* <img className="mx-2 w-10" src={logo} alt="logo"/>
+                 */}
+                <About/>
+            </div>
+
+            <div className="lg:mx-8 my-2 lg:my-8 flex items-center justify-center gap-4 text-white lg:text-4xl text-2xl">
+
+            <a
+                href="https://www.linkedin.com/in/calvin-diprete-77b0552b1" // Replace with your actual LinkedIn URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-200 hover:animate-pulse"
+            >
+                <FaLinkedin/>
+            </a>
+            <a
+                target="_blank" 
+                rel="noreferrer"
+                href="https://github.com/cpdiprete"
+            >
+                <FaGithub className="hover:text-blue-200 hover:animate-pulse"/>
+            </a>
+
+            <a
+                target="_blank" 
+                rel="noreferrer"
+                href="https://www.instagram.com/calvin.diprete/"
+            >
+                <FaInstagram className="hover:text-blue-200 hover:animate-pulse"/>
+            </a>
+
+            </div>
+        </nav>
+    </div>
+    );
+};
+
+export default Navbar;
+
+
+
+
 
 // const Navbar = () => {
 //     return (
@@ -54,46 +104,3 @@ import { FaInstagram } from "react-icons/fa";
 // };
 
 // export default Navbar;
-
-
-const Navbar = () => {
-    return (
-        <div className="flex justify-center">
-        <nav className="mb-4 lg:mb-16 flex lg:items-right justify-between w-full lg:w-5/6 border-b border-purple-300">
-            <div className="flex flex-shrink-0 items-center">
-                <img className="mx-2 w-10" src={logo} alt="logo"/>
-            </div>
-
-            <div className="lg:mx-8 my-2 lg:my-8 flex items-center justify-center gap-4 text-white lg:text-4xl text-2xl">
-
-            <a
-                href="https://www.linkedin.com/in/calvin-diprete-77b0552b1" // Replace with your actual LinkedIn URL
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-200 hover:animate-pulse"
-            >
-                <FaLinkedin/>
-            </a>
-            <a
-                target="_blank" 
-                rel="noreferrer"
-                href="https://github.com/cpdiprete"
-            >
-                <FaGithub className="hover:text-blue-200 hover:animate-pulse"/>
-            </a>
-
-            <a
-                target="_blank" 
-                rel="noreferrer"
-                href="https://www.instagram.com/calvin.diprete/"
-            >
-                <FaInstagram className="hover:text-blue-200 hover:animate-pulse"/>
-            </a>
-
-            </div>
-        </nav>
-    </div>
-    );
-};
-
-export default Navbar;

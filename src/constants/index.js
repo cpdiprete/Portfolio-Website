@@ -18,6 +18,11 @@ import resized_robotics from "../assets/course_pics/resized_robotics.png";
 import resized_OOP from "../assets/course_pics/resized_OOP.png";
 import resized_DSA from "../assets/course_pics/DSA_resized.png";
 import resized_AI from "../assets/course_pics/resized_AI.png";
+import objs from "../assets/course_pics/Objects_Design.png";
+import CS2110 from "../assets/course_pics/2110.png";
+
+import Algo from "../assets/course_pics/Algo.png";
+import ML from "../assets/course_pics/ML.png";
 
 
 import snu from "../assets/Clubs/SNU.png";
@@ -90,11 +95,11 @@ export const COURSES = [
   { name: "Computer Graphics", image: resized_graphics, description: "Understand how images are generated and manipulated programmatically." },
   { name: "Perception & Robotics", image: resized_robotics, description: "Study the design and programming of robotic systems." },
   { name: "Object-Oriented Programming", image: resized_OOP, description: "Learn the principles of OOP and how to structure scalable software." },
-  { name: "Machine Learning", image: AIImage, description: "Teaches techniques in ML, emphasizing algorithms and their applications in real world data to extract useful knowledge for decision making and task support."},
-  {name: "Discrete Mathematics", image: AIImage, description: "BAHHHHHH"},
-  {name: "Design & Analysis of Algorithms", image: AIImage, description: "ABKBJJNJNJNJNJ"},
-  {name: "Objects & Design", image: AIImage, description:"Object-oriented programming methods for dealing with large programs. Introduces design methodology and notation, covering standard principles and practices in design."},
-  {name: "Computer Organization & Programming", image: AIImage, description:"Introduction to computer hardware, circuits, machine language, assembly language, and C programming."},
+  { name: "Machine Learning", image: ML, description: "Teaches techniques in ML, emphasizing algorithms and their applications in real world data to extract useful knowledge for decision making and task support."},
+  // {name: "Discrete Mathematics", image: AIImage, description: "BAHHHHHH"},
+  {name: "Design & Analysis of Algorithms", image: Algo, description: "ABKBJJNJNJNJNJ"},
+  {name: "Objects & Design", image: objs, description:"Object-oriented programming methods for dealing with large programs. Introduces design methodology and notation, covering standard principles and practices in design."},
+  {name: "Computer Organization & Programming", image: CS2110, description:"Introduction to computer hardware, circuits, machine language, assembly language, and C programming."},
 ];
 export const CLUBS = [
   { name: "WREK Radio", image: wrek, description: "Learn how data is organized, stored, and manipulated for efficiency.", roles: ["Operator", "Design Team", "Music Selection Team"]},

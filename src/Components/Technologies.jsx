@@ -24,6 +24,7 @@ const iconVariants = (duration) => ({
 const Technologies = () => {
     const [hoveredSkill, setHoveredSkill] = useState(null);
     return (
+        <div>
         <div className="border-b border-neutral-800 pb-24 lg:pt-4">
             <h2 className="pt-16 lg:pt-0 lg:mt-1 mb-2 text-center text-4xl lg:text-5xl font-bold text-neutral-200">Skills</h2>
             <p className=" mx-auto max-w-3xl text-center text-xl text-white">Technologies and tools that I have developed proficiency with through professional, academic, and personal experience</p>
@@ -110,7 +111,7 @@ const Technologies = () => {
                             exit={{ opacity: 0, y: -10 }}
                             className="absolute top-full mt-2 w-64 rounded-md bg-neutral-800 p-4 text-white shadow-lg"
                         >
-                            <h3 className="text-lg font-bold">Python | 4-yr</h3>
+                            <h3 className="text-lg font-bold">Python/Anaconda | 4-yr</h3>
                             <p className="text-sm">
                                 *Taught and practiced through GT education and personal projects. <br/>
                                 *Well versed in libraries such as tensorflow, numpy, matplotlib, and pandas among others.
@@ -213,7 +214,9 @@ const Technologies = () => {
             </div>
             
         </div>
+    </div>
     );
+
 };
 
 export default Technologies;
