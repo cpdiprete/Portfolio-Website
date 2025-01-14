@@ -13,6 +13,7 @@ import Extracurriculars from "./Components/Extracurriculars";
 
 import AboutMe from "./Personal/AboutMe";
 import "./index.css";
+import Music from "./Personal/Music";
 
 const App = () => {
     return (
@@ -39,7 +40,14 @@ const App = () => {
                                 </>
                             }
                         />
-                        <Route path="/about-me" element={<AboutMe />} />
+                        <Route path="/about-me"
+                        element={
+                            <>
+                            <AboutMe />
+                            <Music/>
+
+                            </>
+                        } />
                     </Routes>
                 </div>
             </div>
