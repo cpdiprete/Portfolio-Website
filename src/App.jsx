@@ -13,7 +13,7 @@ import Extracurriculars from "./Components/Extracurriculars";
 
 import AboutMe from "./Personal/AboutMe";
 import "./index.css";
-import Music from "./Personal/Music";
+// import Music from "./Personal/Music";
 
 const App = () => {
     return (
