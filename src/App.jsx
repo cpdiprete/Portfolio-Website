@@ -44,7 +44,7 @@ const App = () => {
                         element={
                             <>
                             <AboutMe />
-                            <Music/>
+                            {/* <Music/> */}
 
                             </>
                         } />
