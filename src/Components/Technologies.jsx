@@ -24,11 +24,15 @@ const iconVariants = (duration) => ({
 const Technologies = () => {
     const [hoveredSkill, setHoveredSkill] = useState(null);
     return (
-        <div>
+    <div>
         <div className="border-b border-neutral-800 pb-24 lg:pt-4">
             <h2 className="pt-16 lg:pt-0 lg:mt-1 mb-2 text-center text-4xl lg:text-5xl font-bold text-neutral-200">Skills</h2>
+            {/* <h2 className="pt-16 lg:pt-0 lg:mt-1 mb-2 text-center text-4xl lg:text-3xl font-bold text-neutral-200">Languages</h2> */}
             <p className=" mx-auto max-w-3xl text-center text-xl text-white">Technologies and tools that I have developed proficiency with through professional, academic, and personal experience</p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <div className={`mt-10 flex flex-wrap items-center justify-center gap-4 ${
+                hoveredSkill != null ? "pb-20" : ""
+            }`}
+            >
 
                 <motion.div
                     variants={iconVariants(2)}
@@ -51,7 +55,7 @@ const Technologies = () => {
                         >
                             <h3 className="text-lg font-bold">React | 2-yr</h3>
                             <p className="text-sm">
-                                Self taught and practiced through personal projects and tutorials.
+                                Self taught & practiced through personal projects and online tutorial courses
                             </p>
                         </motion.div>
                     )}
@@ -82,7 +86,7 @@ const Technologies = () => {
                         >
                             <h3 className="text-lg font-bold">C/C++ | 2-yr</h3>
                             <p className="text-sm">
-                                Taught and practiced through GT education, experience in computer graphics via C++ and GLSL(OpenGL Shading Language)
+                                Taught & practiced through GT education, experience in computer graphics via C++ and GLSL(OpenGL Shading Language)
                             </p>
                         </motion.div>
                     )}
@@ -113,8 +117,8 @@ const Technologies = () => {
                         >
                             <h3 className="text-lg font-bold">Python/Anaconda | 4-yr</h3>
                             <p className="text-sm">
-                                *Taught and practiced through GT education and personal projects. <br/>
-                                *Well versed in libraries such as tensorflow, numpy, matplotlib, and pandas among others.
+                                *Taught & practiced through GT education and personal projects <br/>
+                                *Skilled with libraries such as tensorflow, numpy, matplotlib, and pandas among others
                             </p>
                         </motion.div>
                     )}
@@ -205,15 +209,61 @@ const Technologies = () => {
                         >
                             <h3 className="text-lg font-bold">JavaScript | 2-yr</h3>
                             <p className="text-sm">
-                                Experienced in JavaScript for building dynamic web applications,
-                                developing user interfaces, and handling backend logic using Node.js.
+                                Self taught & practiced in building dynamic web applications,
+                                developing user interfaces, and handling backend logic
                             </p>
                         </motion.div>
                     )}
                 </motion.div>
-            </div>
-            
+            </div> 
+
+            {/* Developer Tools Section */}
+            {/* <div>
+                <h2 className="pt-16 lg:pt-0 lg:mt-1 mb-2 text-center text-4xl lg:text-3xl font-bold text-neutral-200">Developer Tools</h2>
+                <p className=" mx-auto max-w-3xl text-center text-xl text-white">Tools that I have used in my experience</p>
+
+                <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+                    <motion.div
+                        variants = {iconVariants(6)}
+                        initial="initial"
+                        animate="animate"
+                        whileHover="static"
+                        className="relative rounded-2xl border-4 border-neutral-800 p-4 wrap-text hover:animate-pulse"
+                        onMouseEnter={() => setHoveredSkill("Java")}
+                        onMouseLeave={() => setHoveredSkill(null)}
+                        >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Visual_Studio_Code_1.35_icon.svg"
+                            alt="VSCode Logo"
+                            className="w-16 h-16"
+                        />
+                        <h2 className="pt-2 text-center text-sm text-white">Docker
+                        </h2>
+
+                        {hoveredSkill === "Docker" && (
+                            <motion.div
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                className="absolute top-full mt-2 w-64 rounded-md bg-neutral-800 p-4 text-white shadow-lg"
+                            >
+                                <h3 className="text-lg font-bold">Docker | 3-yr</h3>
+                                <p className="text-sm">                                
+                                    Taught and practiced through GT education/projects
+                                </p>
+                            </motion.div>
+                        )}
+                    </motion.div>
+
+                </div>
+
+            </div> */}
         </div>
+        
+
+
+
+
     </div>
     );
 

@@ -13,13 +13,13 @@ const Navbar = () => {
             <div className="flex flex-shrink-0 items-center">
                 {/* <img className="mx-2 w-10" src={logo} alt="logo"/>
                  */}
-                <About/>
+                {/* <About/> */}
             </div>
 
             <div className="lg:mx-8 my-2 lg:my-8 flex items-center justify-center gap-4 text-white lg:text-4xl text-2xl">
 
             <a
-                href="https://www.linkedin.com/in/calvin-diprete-77b0552b1" // Replace with your actual LinkedIn URL
+                href="https://www.linkedin.com/in/calvin-diprete-77b0552b1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-200 hover:animate-pulse"

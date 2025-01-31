@@ -6,7 +6,7 @@ const Experience = () => {
         <h2 className="mb-10 mt-6 text-center font-bold text-neutral-200 text-4xl lg:text-5xl">Experience</h2>
         <div>
             {EXPERIENCES.map((experience, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div key={index} className="mb-8 flex flex-wrap lg:justify-center mt-6 lg:mt-0">
                 <div className="w-full lg:w-1/4">
                     <div className="w-full lg:w-3/4 flex justify-center">
                         <img
@@ -17,7 +17,7 @@ const Experience = () => {
                     </div>
                 </div>
                 
-                <div className="w-full max-w-xl lg:w-3/4">
+                <div className="w-full max-w-xl lg:w-3/4 mt-6 lg:mt-0">
                 <p className="text-sm text-red-400"> {experience.year}</p>
                     <h6 className="mb-3 mt-1 text-sm font-semibold text-neutral-400">{experience.role} -{" "}
                         <span className = "text-sm text-purple-100">

@@ -1,7 +1,7 @@
 import 'animate.css';
 const ResumeLink = () => {
     return (
-        <div className="flex justify-center mt-4 lg:mt-16">
+        <div className="flex justify-center mt-12 lg:mt-16">
             <a 
                 href="https://docs.google.com/document/d/1BMhfm95OOmDo2A48xVJBx574_72czWFQ4aWTQ9RD6ec/edit?usp=sharing" 
                 target="_blank" 

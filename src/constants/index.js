@@ -31,11 +31,11 @@ import wrek from "../assets/Clubs/WREK.png";
 // import resized_DSA from "../assets/course_pics/DSA_resized.png";
 // import resized_AI from "../assets/course_pics/resized_AI.png";
 
-export const PROFILE_CONTENT = `I am a full-stack developer passionate about building engaging and 
+export const PROFILE_CONTENT = `I'm a full-stack developer passionate about building engaging and 
 efficient web and mobile applications. I am currently pursuing a degree in Computer Science at the Georgia Institute of Technology, where 
 I specialize in Artificial Intelligence and Media Technologies. Using this strong foundation in both front-end and back-end development through my education,
-professional experience, and personal projects, have practiced and enjoyed creating seamless user experiences and robust systems.
-Beyond web and app development, I have a keen interest in game design, exploring how technology can be leveraged to produce interactive and immersive worlds.`;
+professional experience, and personal projects I have practiced creating seamless user experiences and robust systems.
+Beyond web and app development, I have a keen interest in game design and exploring how technology can be leveraged to produce interactive and immersive worlds.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
@@ -90,14 +90,14 @@ export const CONTACT = {
 };
 
 export const COURSES = [
-  { name: "Data Structures & Algorithms", image: resized_DSA, description: "Learn how data is organized, stored, and manipulated for efficiency." },
-  { name: "Artificial Intelligence", image: resized_AI, description: "Explore the fundamentals of AI, machine learning, and intelligent systems. Practiced classical AI technique, such as: Markov Decision problems, Bayes nets, constraint satcation, " },
-  { name: "Computer Graphics", image: resized_graphics, description: "Understand how images are generated and manipulated programmatically." },
-  { name: "Perception & Robotics", image: resized_robotics, description: "Study the design and programming of robotic systems." },
-  { name: "Object-Oriented Programming", image: resized_OOP, description: "Learn the principles of OOP and how to structure scalable software." },
-  { name: "Machine Learning", image: ML, description: "Teaches techniques in ML, emphasizing algorithms and their applications in real world data to extract useful knowledge for decision making and task support."},
+  { name: "Data Structures & Algorithms", image: resized_DSA, description: "Learned data storage/manipulation structures through implementations. Practiced in algorithms using these structures with an emphasis on efficiency." },
+  { name: "Artificial Intelligence", image: resized_AI, description: "Explore the fundamentals of AI, machine learning, and intelligent systems. Practiced classical AI techniques, such as; Markov Decision, Bayes Nets, And Constraint Satisfaction problems. " },
+  { name: "Computer Graphics", image: resized_graphics, description: "Taught how images are generated & manipulated programmatically, and practiced in these methods through C++ and shader language projects." },
+  { name: "Perception & Robotics", image: resized_robotics, description: "Studied the design and programming of robotic systems focused on decisions based on situational perception." },
+  { name: "Object-Oriented Programming", image: resized_OOP, description: "Learned the principles of OOP and how to structure scalable software." },
+  { name: "Machine Learning", image: ML, description: "Taught techniques in ML, emphasizing algorithms and their applications in real world data to extract useful knowledge for decision making and task support."},
   // {name: "Discrete Mathematics", image: AIImage, description: "BAHHHHHH"},
-  {name: "Design & Analysis of Algorithms", image: Algo, description: "ABKBJJNJNJNJNJ"},
+  {name: "Design & Analysis of Algorithms", image: Algo, description: "Explored principles & techniques for designing efficient algorithms to solve computational problems. Practiced techniques such as graph manipulation, div & conquer, dynamic programming, P/NP among others."},
   {name: "Objects & Design", image: objs, description:"Object-oriented programming methods for dealing with large programs. Introduces design methodology and notation, covering standard principles and practices in design."},
   {name: "Computer Organization & Programming", image: CS2110, description:"Introduction to computer hardware, circuits, machine language, assembly language, and C programming."},
 ];
