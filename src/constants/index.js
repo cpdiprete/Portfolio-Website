@@ -84,7 +84,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "750 Fowler Street Nw, ATL",
+  address: "750 Fowler Street NW, ATL",
   phoneNo: "+1 (706)-814-1305 ",
   email: "cdiprete6@gatech.edu",
 };
