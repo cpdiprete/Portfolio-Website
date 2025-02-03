@@ -170,7 +170,7 @@ const Profile = () => {
             variants={container(0.1)}
             initial="hidden"
             animate="visible"
-            className="pb-6 text-8xl font-thick tracking-tight text-white mt-2"
+            className="pb-6 md:text-[5.0rem] lg:text-8xl font-thick tracking-tight text-white mt-2"
             >
             Calvin DiPrete
             </motion.h1>

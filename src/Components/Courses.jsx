@@ -18,13 +18,27 @@ const Courses = () => {
         autoplay: true,
         autoplaySpeed: 1700,
         responsive: [
-            {
-                breakpoint: 768, // md breakpoint
-                settings: {
-                    slidesToShow: 3, // Default for medium and smaller screens
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    },
                 },
-            },
-        ],
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        autoplaySpeed: 900,  // even faster for very small screens
+                    },
+                },
+                // {
+                //     breakpoint: 480,
+                //     settings: {
+                //         slidesToShow: 1,
+                //         autoplaySpeed: 900,  // even faster for very small screens
+                //     },
+                // },
+            ],
     };
 
     const handleMouseEnter = (index) => {
@@ -81,7 +95,7 @@ const Courses = () => {
                                 />
                                 <p className="text-xs lg:text-lg font-bold">{course.name} </p>
                                 {hoveredIndex === index && (
-                                    <div className="px-4 py-1 rounded text-sm text-neutral-800 font-semibold ">
+                                    <div className="lg:px-2 lg:py-1 rounded text-[0.625rem] lg:text-sm text-neutral-800 lg:font-semibold">
                                         {course.description}
                                     </div>
                                 )}
